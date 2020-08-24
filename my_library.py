@@ -1,6 +1,9 @@
 from subprocess import Popen, PIPE, DEVNULL
 from os.path import isfile, exists
 
+# Just some functions that I use day-to-day with python
+# Created by Simon Gardling
+
 def run_command(command):
     process = Popen(command, stdout=PIPE, universal_newlines=True, shell=True,stderr=DEVNULL)
     stdout, stderr = process.communicate()
