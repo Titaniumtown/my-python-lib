@@ -5,7 +5,7 @@ from os.path import isfile, exists
 # Created by Simon Gardling
 
 def run_command(command):
-    process = Popen(command, stdout=PIPE, universal_newlines=True, shell=True,stderr=DEVNULL)
+    process = Popen(command, stdout=PIPE, universal_newlines=True, shell=True, stderr=DEVNULL)
     stdout, stderr = process.communicate()
     del stderr
     return stdout
